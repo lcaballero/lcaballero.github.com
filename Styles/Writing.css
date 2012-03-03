@@ -1,0 +1,93 @@
+﻿#FullContent {
+	margin: 24px;
+}
+
+/* Main-area general styles. */
+.writing {
+	position: relative;
+	width: 40%;
+	margin: 0px auto;
+	font-family: Tahoma;
+}
+.writing div > h2 {
+	font-family: Impact;
+	font-size: 32px;
+}
+.writing > hr {
+	color: #000099;
+	height: 2px;
+	margin: 32px;
+}
+.writing > div > p {
+	line-height: 1.5em;
+	font-size: 100%;
+}
+
+/* General Sub-section styles. */
+.writing div.subsections {
+	margin:16px;
+}
+.writing div.subsections p+p {
+	margin-top: 20px;
+}
+.writing div.subsections div {
+	padding-bottom:20px;
+}
+.writing div.subsections div+div {
+	margin-top:20px;
+}
+.writing div.subsections h3 {
+	margin-bottom:8px;
+	font-family: Verdana;
+	font-weight:bold;
+}
+
+/* Main-area general styles. */
+.writing .header {
+	position: relative;
+	border-bottom:2px solid #000099;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+.writing .header h2 {
+	width: 80%;
+}
+.writing .header dl {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	text-align: right;
+}
+
+/* Article meta data. */
+.writing div > dl dt {
+	display: none;
+}
+
+
+/* External References */
+.writing .references {
+	margin:20px 0px 0px 0px;
+}
+.writing .references li+li{
+	display:block;
+	margin-top:8px;
+}
+
+/* Rail */
+.writing .rail {
+	position: fixed;
+	width: 300px;
+	left:71%;
+	top: 20px;
+}
+.writing .rail div+div {
+	margin-top:20px;
+}
+
+/* copyrights */
+.copyrights {
+	clear:both;
+	text-align:right;
+}
+

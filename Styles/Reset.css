@@ -1,0 +1,77 @@
+﻿/* This is copied from wsodBase.css that Joe Henry just began */
+body,div,p,table,caption,tbody,tfoot,thead,tr,th,td,h1,h2,h3,h4,h5,h6,
+ul,ol,li,dl,dt,dd,pre,form,fieldset,legend,input,textarea,blockquote,iframe {
+	margin:0;
+	padding:0;
+	background-color:transparent;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+caption,th {
+	text-align:left;
+}
+
+fieldset,img,abbr,acronym { 
+	border:0;
+}
+
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+strong {
+	font-weight:bold;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
+}
+
+:focus {
+	outline: 0;
+}
+
+.hasLayout, .contain {
+	*zoom:1;
+}
+
+.contain:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+.capitalize {
+	text-transform:capitalize;
+}
+.upperCase {
+	text-transform:uppercase;
+}
+.lowerCase {
+	text-transform:lowercase;
+}
+
+.floatLeft {
+	float:left;
+	_display:inline;
+}
+.floatRight {
+	float:right;
+	_display:inline;
+}
+
+.none {
+	display:none;
+}
+

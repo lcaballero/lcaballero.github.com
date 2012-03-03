@@ -1,0 +1,114 @@
+﻿/**************************************************************************/
+/**************************************************************************/
+.Button1 span {
+	/*
+	Left here until a suitable image can found.
+
+	background-image: url(../Images/Btn.Backgrounds.png);
+	background-position: left -1px;
+	display:block;
+	_display:inline-block;
+	line-height:21px;
+	padding-left:10px;
+	white-space:nowrap;
+	text-align:center;
+	*/
+
+	color:#FFF;
+	text-decoration:none;
+	padding-left:10px;
+	
+}
+a.Button1 {
+
+	/*
+	Left here until a suitable image can found.
+
+
+	background-image: url(../Images/Btn.Backgrounds.png);
+	background-position: right -22px;
+	padding-right:10px;
+	display:-moz-inline-box;
+	display:inline-block;
+	text-decoration:none;
+	color:#000;
+	cursor:pointer;
+	font-size:11px;
+	padding-right:10px;
+
+	*/
+
+	display:inline-block;
+	background:-moz-linear-gradient(center top , #990000, #CC0000) repeat scroll 0 0 transparent;
+	text-decoration:none;
+	padding-right:10px;
+
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+
+	margin-top:4px; 
+	margin-left:10px; 
+	margin-right:10px; 
+	float:left;
+}
+a.Button1:hover {
+	background:-moz-linear-gradient(center top , #CC0000, #990000) repeat scroll 0 0 transparent;
+}
+
+
+
+/***************************************************************************
+ * First selector does the rounding, the second does the gradient.
+ **************************************************************************/
+a.Button10 {
+	-moz-border-radius:50px 50px 50px 50px;
+	-moz-box-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+	color:#FFFFFF;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+	display:block;
+}
+a.Button10 { /* Gradient red -> darker red. */
+	background:-moz-linear-gradient(center top , #990000, #CC0000) repeat scroll 0 0 transparent;
+}
+a.Button10:hover { /* Gradient darker red -> red. */	
+	background:-moz-linear-gradient(center top , #CC0000, #990000) repeat scroll 0 0 transparent;
+}
+/***************************************************************************/
+a.Button11 {
+	-moz-border-radius:50px 50px 50px 50px;
+	-moz-box-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+	color:#FFFFFF;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+	display:block;
+}
+a.Button11 { /* Gradient green -> darker green. */
+	background:-moz-linear-gradient(center top , #009900, #66CC00) repeat scroll 0 0 transparent;
+}
+a.Button11:hover { /* Gradient green -> darker green. */
+	background:-moz-linear-gradient(center top , #66CC00, #009900) repeat scroll 0 0 transparent;
+}
+
+/***************************************************************************/
+a.Button12 {
+	-moz-border-radius:50px 50px 50px 50px;
+	-moz-box-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+	color:#FFFFFF;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+	display:block;
+}
+a.Button12 { /* Gradient blue -> darker blue. */
+	background:-moz-linear-gradient(center top , #0079F4, #005CBA) repeat scroll 0 0 transparent;
+}
