@@ -1,16 +1,22 @@
-﻿;(function ($) {
+﻿; (function ($) {
 
 	$.ajax({
 		url:"Writing/Performance-Tuning.html",
 		method:"GET",
 		data:{},
 		success:function( result ) {
-			console.info( result );
+
 			result = $(result);
-			console.info( result );
-			$("#FullContent").append( $(result) );
+
+			$("#writing-viewport").append( $(result) );
+
+			$.renderBookmarks();
+
+			$("body:first").removeClass("none");
+
 		},
 		error:function( result ) {
+			console.info("oh snap -- error");
 		}
 	});
 

@@ -1,0 +1,45 @@
+﻿.link-roll {
+	width:25%;
+	float:left;
+	font-family: Tahoma;
+	position:absolute;
+}
+.link-roll li {
+	padding:8px;
+}
+.link-roll li div > div > div {
+	position:relative;
+	padding:8px 0px;
+}
+.link-roll a > img {
+	position:absolute;
+	left:4px;
+	top:9px;
+}
+.link-roll a {
+	color:#444;
+	text-decoration:none;
+}
+.link-roll a > span {
+	color:#444;
+	margin-left:28px;
+	margin-right:8px;
+	display:block;
+}
+.link-roll a,
+.link-roll a:visited {
+	color:#000099;
+}
+
+.link-roll li:hover {
+	background-color:#eeeeee;
+}
+
+/* Bookends */
+.link-roll li div.left-bookend {
+	border-left:8px solid #000099;
+}
+
+.link-roll li div.right-bookend {
+	border-right:1px solid #000099;
+}

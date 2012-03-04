@@ -3,18 +3,50 @@
 <head>
 	<title>Using some GitHub</title>
 	<link href="Styles/Reset.css" rel="stylesheet" type="text/css" />
+	<link href="Styles/Common.css" rel="stylesheet" type="text/css" />
 	<link href="Styles/Buttons.css" rel="stylesheet" type="text/css" />
 	<link href="Styles/Writing.css" rel="stylesheet" type="text/css" />
+	<link href="Styles/Link-Roll.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-29681615-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
 </head>
-<body>
-	<div id="FullContent">
+<body class="none">
+	<div id="full-content">
+		<div class="link-roll">
+		</div>
+		<div id="writing-viewport">
+		</div>
 	</div>
 	<p class="copyrights">
 		&copy; 2012 <span>Lucid-Edge Productions, Ltd.</span> All rights reserved.</p>
 
-	<script id="Performance-Tuning" type="text/html" src="Writing/Performance-Tuning.html"></script>
+	<script id="performance-tuning" type="text/html" src="Writing/Performance-Tuning.html">
+	</script>
 
 	<script type="text/javascript" src="Scripts/jQuery/jquery-1.6.3.min.js"></script>
+	<script type="text/javascript" src="Scripts/Pinboard/Pinboard.Link-Roll.js"></script>
 	<script type="text/javascript" src="Scripts/PageManager.js"></script>
+
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+	(function () {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	})();
+</script>
+
 </body>
 </html>

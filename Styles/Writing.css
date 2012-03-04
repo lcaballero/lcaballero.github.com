@@ -1,17 +1,9 @@
-﻿#FullContent {
-	margin: 24px;
-}
-
-/* Main-area general styles. */
+﻿/* Main-area general styles. */
 .writing {
 	position: relative;
-	width: 40%;
+	width: 45%;
 	margin: 0px auto;
 	font-family: Tahoma;
-}
-.writing div > h2 {
-	font-family: Impact;
-	font-size: 32px;
 }
 .writing > hr {
 	color: #000099;
@@ -43,27 +35,25 @@
 }
 
 /* Main-area general styles. */
-.writing .header {
+.writing h2 {
+	font-family: Impact;
+	font-size: 32px;
+
 	position: relative;
 	border-bottom:2px solid #000099;
-	padding-bottom:20px;
+	padding-bottom:12px;
 	margin-bottom:20px;
 }
-.writing .header h2 {
-	width: 80%;
-}
-.writing .header dl {
-	position: absolute;
+
+/* Article meta data. */
+.writing dl {
 	top: 0px;
 	right: 0px;
 	text-align: right;
 }
-
-/* Article meta data. */
-.writing div > dl dt {
+.writing dl dt {
 	display: none;
 }
-
 
 /* External References */
 .writing .references {
@@ -78,7 +68,7 @@
 .writing .rail {
 	position: fixed;
 	width: 300px;
-	left:71%;
+	left:75%;
 	top: 20px;
 }
 .writing .rail div+div {

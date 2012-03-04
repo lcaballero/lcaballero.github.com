@@ -1,17 +1,21 @@
 ﻿<div class="writing">
-	<div class="header">
-		<h2>
-			Web App - Performance Tuning</h2>
-		<dl>
-			<dt>Web App - Performance Tuning</dt>
-			<dd>
-				Lucas Caballero</dd>
-			<dd>
-				03-03-2012</dd>
-			<dd>
-				(Work in progress)</dd>
-		</dl>
-	</div>
+	<h2>
+		Web App - Performance Tuning
+
+		<!-- Place this tag where you want the +1 button to render -->
+		<g:plusone></g:plusone>
+
+		</h2>
+
+	<dl>
+		<dt>Web App - Performance Tuning</dt>
+		<dd>
+			Lucas Caballero</dd>
+		<dd>
+			03-03-2012</dd>
+		<dd>
+			(Work in progress)</dd>
+	</dl>
 	<div class="rail">
 		<div class="tags">
 			<h3>
@@ -47,12 +51,16 @@
 			</p>
 			<p>
 				I'm writing this to reflect on some of the ideas I'm working with, and for those
-				out there who have faced the problem too, and for whom it's not a matter of rearranging
-				a site in some kind of panick because someone load-tested and found they could only
-				get 6 request/sec, and now everyone is scrambling to improve throughput. For the
-				folks in the latter circumstance, I feel for you, because in general it's a lack
-				of forethought that tends to cause that problem, and a lack of forethought probably
-				also means you have to dive into a muddled mess of speghetti code.
+				out there who have faced the problem too, and for whom it's <strong>not</strong>
+				a matter of rearranging a site in some kind of <em>panick</em> because someone <em>
+					load-tested</em> and found they could only get 6 request/sec. Thereby, the project
+				suddenly switches gears scrambling to improve throughput. For the folks in the latter
+				circumstance, I feel for you, because in general it's a lack of forethought that
+				tends to cause that problem, and a lack of forethought probably also means you have
+				to dive into a muddled mess of speghetti code. This is more for those who went into
+				performance tuning already feeling pretty good about their site, and are looking
+				to give it <a href="http://www.youtube.com/watch?v=wI4tevra8Lg">ludicrous speed in
+					lucidicrous speed</a>. (Or really, just kind inch closer to goolge-speed).
 			</p>
 		</div>
 		<div>
@@ -94,9 +102,9 @@
 			<p>
 				Most people right now will be rolling their eyes and thinking "no-shit". But let's
 				be clear, this is not 'use gzip', this is make sure gzip is on. That is if you 'assume'
-				it's on you will probably regret making that assumption. As it turns out, I was looking
-				around for ways to answer the question: once the request is delivered to the
-				browser what keeps it from rendering the page lickety-split?
+				it's on you will probably regret making that assumption. As it turns out, I was
+				looking around for ways to answer the question: once the request is delivered to
+				the browser what keeps it from rendering the page lickety-split?
 			</p>
 			<p>
 				I installed <a href="http://code.google.com/speed/page-speed/docs/using_chrome.html">
@@ -114,6 +122,101 @@
 				of long running scripts, which lead to some other ideas.
 			</p>
 		</div>
+		<div>
+			<h3>
+				Idea: Add inlined page metrics (tracing)</h3>
+			<p>
+				This is really nothing more than wrapping some calls with timestamps, and determining
+				the elapsed time. However, what I've found to be useful is to provide the developer
+				some way of visulizing this data, so that they can see the effects of changing a
+				loop, parallelizing some <code>code</code>, not using a try like an <code>if</code>,
+				etc.
+			</p>
+			<!-- Add some graphical visualizations. -->
+		</div>
+		<div>
+			<h3>
+				Idea: Cache what can be cached</h3>
+			<p>
+				For MVC web apps there is typically some kind of route resolution step inside of
+				the framework that ultimately creats ControllerA, and excutes ActionB. The look
+				up based on a URL can be cached, and mapped to some function/lambda/procedure, etc.
+				Never again does the URL need determine if ControllerA exists, with ActionB before
+				launching into rendering the page, or for that matter figuring out the dynamic way
+				of producing that same pair -- it's done, it's memoized.
+			</p>
+			<p>
+				This is true too of just about anything "long-running" during a page request: generating
+				an image, compressing/minimizing scripts, fetching data from a 3rd party. If the
+				asset can be saved and resurfaced for about 5 or 10 minutes in a high traffic site,
+				then it's probably a worthy candidate for caching instead of fresh query, generation,
+				processing, etc.
+			</p>
+		</div>
+		<div>
+			<h3>
+				Idea: Respond early with the 'head'</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Use localStorage browser cache for inlined code</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Use localStorage browser cache for inlined code</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Add caching headers for the favicon.ico</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Check and remove 404s</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Add static content CDNs to boost concurrency (IE)</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Use proper browser asset caching and server-side url version control.</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Combine images into sprites and aggressively cache.</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Pre-launch caching for active users</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Build-Time compile/minify scripts and styles</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Create packages for each page allowing each page to be optimized</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Appache bench, Keynote, LOIC, etc</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Load-testing sandbox -- oh yeah</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Wicked fast backend message queuing</h3>
+		</div>
+		<div>
+			<h3>
+				Idea: Timestamps through the pipe-line</h3>
+		</div>
 	</div>
 </div>
-
+<!--
+# Move the 'work in progress' to the left
+# Add links to the in page anchors in the TOC
+# Link the tags to stack-overflow, my pinterest account, etc.
+-->
