@@ -1,1 +1,0 @@
-javascript:q=location.href;if(document.getSelection) {d=document.getSelection();}else{d='';};p=document.title;void(open('http://pinboard.in/note/add?url=' + encodeURIComponent(q) + '&note=' + encodeURIComponent(d)+'&title='+encodeURIComponent(p),"Add_Note",'toolbar=no,width=700,height=700'));
